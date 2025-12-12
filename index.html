@@ -33,7 +33,45 @@
     .card {background:#f8f9fa; border-radius:10px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
     .card img {width:100%; border-radius:8px; margin-bottom:10px;}
     footer {text-align:center; padding:20px; background:#f1f1f1; margin-top:40px;}
-    @media(max-width:700px){header .container{flex-direction:column;text-align:center;} header nav{margin-top:10px;}.hero{flex-direction:column; text-align:center;}}
+
+    /* Gallery styles */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .gallery-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .gallery-card h3 {
+      color: var(--primary);
+      margin: 10px 0 5px;
+    }
+    .gallery-card p {
+      font-size: 0.95rem;
+      padding: 0 10px 15px;
+    }
+
+    @media(max-width:700px){
+      header .container{flex-direction:column;text-align:center;} 
+      header nav{margin-top:10px;}
+      .hero{flex-direction:column; text-align:center;}
+    }
   </style>
 </head>
 <body>
@@ -45,6 +83,7 @@
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -52,6 +91,7 @@
   </header>
 
   <div class="container">
+
     <!-- Hero -->
     <section class="hero" id="home">
       <div>
@@ -97,6 +137,28 @@
       </div>
     </section>
 
+    <!-- Projects & Gallery -->
+    <section id="gallery">
+      <h2>Gallery & Community Work</h2>
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <img src="images/volunteering1.jpg" alt="Health Awareness Workshop">
+          <h3>Health Awareness Workshop</h3>
+          <p>Educating local communities about sanitation and waterborne diseases.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="images/research1.jpg" alt="Henhage Phage Presentation">
+          <h3>Henhage Phage Research</h3>
+          <p>Presented bacteriophage research at Harvard Symposium 2024.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="images/community.jpg" alt="Hospital Volunteering">
+          <h3>Community Hospital Volunteering</h3>
+          <p>Supporting patients and hospital staff while raising health awareness.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- CV -->
     <section id="cv">
       <h2>Curriculum Vitae</h2>
@@ -111,6 +173,7 @@
       <p>Phone: +233 535 153 180</p>
       <p>I am always open to collaboration, research opportunities, and public health projects. Reach out!</p>
     </section>
+
   </div>
 
   <!-- Footer -->
@@ -119,4 +182,4 @@
   </footer>
 
 </body>
-</html> 
+</html>
