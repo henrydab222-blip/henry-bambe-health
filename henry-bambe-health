@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Bambe Dabuo — Healthcare Portfolio</title>
+  <meta name="description" content="Portfolio of Henry Bambe Dabuo, healthcare researcher and advocate.">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root {
+      --primary: #0b74de; /* blue */
+      --secondary: #e6f0fa; /* light blue */
+      --accent: #28a745; /* green accent */
+      --text: #111;
+      --bg: #fff;
+      --font: 'Arial', sans-serif;
+    }
+    * {box-sizing:border-box; margin:0; padding:0;}
+    body {font-family: var(--font); background: var(--bg); color: var(--text); line-height:1.5;}
+    a {text-decoration:none; color: var(--primary);}
+    header {background: var(--primary); color: #fff; padding: 20px 0;}
+    header .container {display:flex; justify-content:space-between; align-items:center; max-width:1000px; margin:0 auto; padding:0 20px;}
+    header nav a {margin-left: 20px; color:#fff; font-weight:bold;}
+    .container {max-width:1000px; margin:40px auto; padding:0 20px;}
+    h1,h2,h3 {color: var(--primary);}
+    h1 {font-size:2.5rem; margin-bottom:15px;}
+    h2 {margin:40px 0 20px 0;}
+    p {margin-bottom:15px;}
+    .hero {display:flex; flex-wrap:wrap; gap:20px; align-items:center; background: var(--secondary); padding:40px 20px; border-radius:10px;}
+    .hero img {max-width:300px; border-radius:10px;}
+    .button {display:inline-block; padding:10px 20px; background: var(--accent); color:#fff; border-radius:8px; margin-top:15px;}
+    .projects {display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:20px;}
+    .card {background:#f8f9fa; border-radius:10px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .card img {width:100%; border-radius:8px; margin-bottom:10px;}
+    footer {text-align:center; padding:20px; background:#f1f1f1; margin-top:40px;}
+    @media(max-width:700px){header .container{flex-direction:column;text-align:center;} header nav{margin-top:10px;}.hero{flex-direction:column; text-align:center;}}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div><strong>Henry Bambe Dabuo</strong></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <h1>Hello, I’m Henry Bambe Dabuo</h1>
+        <p>Healthcare advocate, researcher, and lifelong learner committed to improving health access and saving lives. My work spans public awareness campaigns, scientific research, and community initiatives.</p>
+        <a class="button" href="#projects">See My Work</a>
+      </div>
+      <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="Henry Bambe Dabuo">
+    </section>
+
+    <!-- About / Motivation -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My desire to study healthcare and the medical sciences comes from a very personal place—one shaped by loss, childhood experiences, and a commitment to improving access to medical care for people who need it most.</p>
+      <p>I grew up in a rural village where trips to the hospital were rare. My grandmother, who raised me for most of my childhood, shaped my character. People in the village called me “Adwuma ba”—the hardworking child—because I followed her everywhere on the farm.</p>
+      <p>Her illness and passing ignited my passion for healthcare. Since then, I have volunteered at hospitals, led health awareness campaigns, and pursued research in microbiology and infectious diseases, determined to make a difference in public health.</p>
+    </section>
+
+    <!-- Projects / Research -->
+    <section id="projects">
+      <h2>Projects & Research</h2>
+      <div class="projects">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=Henhage+Phage+Research" alt="Henhage Phage Research">
+          <h3>Henhage Phage Research</h3>
+          <p>Discovered and characterized bacteriophage ‘Henhage’ to fight antibiotic-resistant bacteria. Presented at the Harvard Symposium 2024.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=Health+Awareness+Club" alt="Health Awareness Club">
+          <h3>Health Awareness Club</h3>
+          <p>Founded a school club focused on sanitation education and disease prevention in rural communities.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=Sickle+Cell+Research" alt="Sickle Cell Research">
+          <h3>Sickle Cell Research Assistant</h3>
+          <p>Worked with Lehigh University on rapid sickle-cell diagnostic device. Awarded Best Science Research Team.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=Community+Volunteering" alt="Community Volunteering">
+          <h3>Community Health Volunteering</h3>
+          <p>Provided support at Ahodwo Community Hospital and led public health campaigns during COVID-19.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>Click below to download my CV:</p>
+      <a class="button" href="CV_Henry_Bambe_Dabuo.pdf" download>Download CV</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:henrydab222@gmail.com">henrydab222@gmail.com</a></p>
+      <p>Phone: +233 535 153 180</p>
+      <p>I am always open to collaboration, research opportunities, and public health projects. Reach out!</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Henry Bambe Dabuo • Built with HTML & CSS • <a href="#contact">Contact</a></p>
+  </footer>
+
+</body>
+</html> 
